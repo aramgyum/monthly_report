@@ -1,0 +1,1815 @@
+{
+  "weeks": [
+    {
+      "id": "wbtzh33d7ysmmr2nx1p",
+      "week": "Week of Mar 10, 2026",
+      "savedAt": "2026-03-15T01:27:17.277Z",
+      "overallStatus": "at-risk",
+      "primaryFocus": "Integration of AI-driven functionalities: Chatbot, AI Medical Analyzer, and enhancements to existing modules.",
+      "primaryRisk": "Potential delivery delays.",
+      "kpis": [
+        {
+          "id": "k1",
+          "label": "Valid Studies in DB",
+          "value": "11,382",
+          "sub": "Study DB",
+          "icon": "🗄️"
+        },
+        {
+          "id": "k2",
+          "label": "User Requests",
+          "value": "74",
+          "sub": "All time",
+          "icon": "📬"
+        },
+        {
+          "id": "k3",
+          "label": "Active Partners",
+          "value": "3",
+          "sub": "With updates",
+          "icon": "🤝"
+        },
+        {
+          "id": "k4",
+          "label": "Open Roadmap Items",
+          "value": "7",
+          "sub": "In progress / plan",
+          "icon": "🗺️"
+        }
+      ],
+      "releases": [
+        {
+          "id": "b73dlpx2dnkmmr2ocj7",
+          "platform": "New Platform",
+          "version": "0.0",
+          "targetDate": "TBD",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "r1",
+          "platform": "Web App (Labrador)",
+          "version": "3.6.1",
+          "targetDate": "Feb 17, 2026",
+          "status": "off-track",
+          "notes": "UI issue identified. Deployment pending fix."
+        },
+        {
+          "id": "r2",
+          "platform": "Mobile App (Android)",
+          "version": "1.2.2",
+          "targetDate": "—",
+          "status": "done",
+          "notes": "Live"
+        },
+        {
+          "id": "r3",
+          "platform": "Mobile App (iOS)",
+          "version": "1.2.2",
+          "targetDate": "—",
+          "status": "done",
+          "notes": "Live"
+        }
+      ],
+      "userPlatform": [
+        {
+          "id": "u5",
+          "title": "Release #4 — Chatbot",
+          "status": "done",
+          "priority": "low"
+        },
+        {
+          "id": "u6",
+          "title": "Release #4 — AI Medical Analyzer (analysis + standalone)",
+          "status": "in-progress",
+          "priority": "high"
+        },
+        {
+          "id": "u7",
+          "title": "Design — Sponsored/Featured studies rotation",
+          "status": "in-progress",
+          "priority": "medium"
+        },
+        {
+          "id": "u1",
+          "title": "Release #3 — Dynamic Meta Title & Meta Description (SEO)",
+          "status": "done",
+          "priority": "high"
+        },
+        {
+          "id": "u2",
+          "title": "Release #3 — New VIDEO Content Type in Learning Center",
+          "status": "done",
+          "priority": "high"
+        },
+        {
+          "id": "u3",
+          "title": "Release #3 — Minor bug fix",
+          "status": "done",
+          "priority": "medium"
+        },
+        {
+          "id": "u4",
+          "title": "Release #3 — Major UI bug fix",
+          "status": "done",
+          "priority": "medium"
+        }
+      ],
+      "partnerPlatform": [
+        {
+          "id": "p3",
+          "title": "Enrollment Dashboard — integrating more partner study data",
+          "status": "in-progress",
+          "priority": "high"
+        },
+        {
+          "id": "p4",
+          "title": "Aggregated data view — create",
+          "status": "planned",
+          "priority": "medium"
+        },
+        {
+          "id": "p1",
+          "title": "Enrollment Dashboard — presented to BCC (positive feedback)",
+          "status": "done",
+          "priority": "high"
+        },
+        {
+          "id": "p2",
+          "title": "Enrollment Dashboard — updated BCC016 with recent data",
+          "status": "done",
+          "priority": "high"
+        }
+      ],
+      "analytics": [
+        {
+          "id": "a2",
+          "title": "GTM — Learning Center & Support Program tracking",
+          "status": "in-progress",
+          "priority": "medium"
+        },
+        {
+          "id": "a5",
+          "title": "Learning Center & Support Card Click events",
+          "status": "off-track",
+          "priority": "medium"
+        },
+        {
+          "id": "a1",
+          "title": "[Manitoba] Clarity Integration — Enrollment Portal",
+          "status": "done",
+          "priority": "high"
+        },
+        {
+          "id": "a3",
+          "title": "Lookup Table Update — Dynamic Stream Assignment",
+          "status": "done",
+          "priority": "medium"
+        },
+        {
+          "id": "a4",
+          "title": "Module Selector Switch (Dropdown Click)",
+          "status": "done",
+          "priority": "medium"
+        }
+      ],
+      "database": {
+        "totalStudies": 11382,
+        "sessions": [
+          {
+            "id": "d1",
+            "name": "Data Simplification Session 009 — Deployment to Production",
+            "status": "in-progress"
+          },
+          {
+            "id": "d2",
+            "name": "Data Simplification Session 010 — Database Update Across All Entities",
+            "status": "open"
+          }
+        ]
+      },
+      "partners": [
+        {
+          "id": "pt1",
+          "name": "ABTA x WeTrials",
+          "icon": "🧠",
+          "completed": [
+            "Shared updated WeTrials Study Finder Analytics Dashboard (Dec 2025 & Jan 2026)"
+          ],
+          "inProgress": [
+            {
+              "id": "pt1i1",
+              "title": "Sponsored studies Publishing — received one more study",
+              "status": "in-progress"
+            }
+          ],
+          "notes": "Brain Tumor Clinical Trials focus."
+        },
+        {
+          "id": "pt2",
+          "name": "BCC x WeTrials",
+          "icon": "🔬",
+          "completed": [
+            "Presented Enrollment Dashboard to BCC (Mar 5, 2026)",
+            "WeTrials Presentation for BCC Annual Meeting — DONE"
+          ],
+          "inProgress": [
+            {
+              "id": "pt2i1",
+              "title": "Study Finder v3.7.0",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt2i2",
+              "title": "AI Video — BCC020 Scenario (sent, minor feedback received)",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt2i3",
+              "title": "AI Video — Dr. Sholler re-recording (Precision Medicine)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i4",
+              "title": "AI Video — Dr. Kraveka recording",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i5",
+              "title": "Clinical Trial Enrollment Dashboard — data integration initiated",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt2i6",
+              "title": "Outstanding invoices — follow up with Abbie",
+              "status": "planned"
+            }
+          ],
+          "notes": "Go-live: Abbie may proceed if video content integrated into study details."
+        },
+        {
+          "id": "pt3",
+          "name": "Duke x WeTrials",
+          "icon": "🏥",
+          "completed": [],
+          "inProgress": [],
+          "notes": "No updates this week."
+        },
+        {
+          "id": "pt4",
+          "name": "OncoDaily",
+          "icon": "📰",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "pt4i1",
+              "title": "NDA Review — slow pace raises efficiency concerns",
+              "status": "in-progress"
+            }
+          ],
+          "notes": "Drafted email clarifying NDA purpose. Awaiting response."
+        }
+      ],
+      "roadmap": [
+        {
+          "id": "ep0jh61lb0rmmr2pyoi",
+          "title": "New item",
+          "status": "planned",
+          "priority": "medium",
+          "note": ""
+        },
+        {
+          "id": "rm1",
+          "title": "AI-powered related content / matching system",
+          "status": "planned",
+          "priority": "high",
+          "note": ""
+        },
+        {
+          "id": "rm2",
+          "title": "Clinician Profile Generator",
+          "status": "planned",
+          "priority": "high",
+          "note": "Priority building block toward clinician + patient network"
+        },
+        {
+          "id": "rm7",
+          "title": "Study Title Optimization",
+          "status": "in-progress",
+          "priority": "medium",
+          "note": "3 weeks refinement — no dev needed"
+        },
+        {
+          "id": "rm8",
+          "title": "Biomarker-Based Search",
+          "status": "in-progress",
+          "priority": "high",
+          "note": ""
+        },
+        {
+          "id": "rm3",
+          "title": "QR code–based trial referral / workflow",
+          "status": "planned",
+          "priority": "medium",
+          "note": ""
+        },
+        {
+          "id": "rm4",
+          "title": "GenomOncology integration (multilingual, simplify on fly)",
+          "status": "planned",
+          "priority": "medium",
+          "note": ""
+        },
+        {
+          "id": "rm5",
+          "title": "Trial icons/tags on cards (surgery, device, placebo…)",
+          "status": "planned",
+          "priority": "medium",
+          "note": ""
+        },
+        {
+          "id": "rm6",
+          "title": "Second Opinion feature",
+          "status": "planned",
+          "priority": "low",
+          "note": "Deprioritized until foundations built"
+        }
+      ],
+      "userRequests": [
+        {
+          "id": "ur1",
+          "period": "2024",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 17,
+          "uniqueUsers": 3
+        },
+        {
+          "id": "ur2",
+          "period": "2025",
+          "webApp": {
+            "wetrials": 10,
+            "abta": 21,
+            "gsn": 1,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 13,
+          "uniqueUsers": 36
+        },
+        {
+          "id": "ur3",
+          "period": "Jan 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 3,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 4
+        },
+        {
+          "id": "ur4",
+          "period": "Feb 1–8 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 0
+        },
+        {
+          "id": "ur5",
+          "period": "Feb 9–15 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 0
+        },
+        {
+          "id": "ur6",
+          "period": "Feb 16–22 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 0,
+            "gsn": 5,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 1
+        },
+        {
+          "id": "ur7",
+          "period": "Feb 23–Mar 1 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 1,
+          "uniqueUsers": 2
+        }
+      ],
+      "hubspotUrl": "https://app.hubspot.com/reports-dashboard/43909160/view/15262690",
+      "notes": "ACL Caregiver AI Prize Challenge: Registered to attend webinar (Track 1 & Track 2). Simplified Study Content Review ongoing.",
+      "customModules": [],
+      "mitigationPlan": ""
+    },
+    {
+      "id": "o1wqmr5hpxmmr2s0md",
+      "week": "Mar 09 - 15 2026 - Week 11 Q1",
+      "savedAt": "2026-03-16T22:34:50.546Z",
+      "overallStatus": "off-track",
+      "primaryFocus": "Integration of AI-driven functionalities: Chatbot, AI Medical Analyzer, and enhancements to existing modules.",
+      "primaryRisk": "Delivery delays, Platform–product dependency delays, Additional review cycle iterations",
+      "kpis": [
+        {
+          "id": "k1",
+          "label": "In Development",
+          "value": "v3.8.0",
+          "sub": "Web App [Labrador]",
+          "icon": "🗄️",
+          "iconKey": "activity"
+        },
+        {
+          "id": "k2",
+          "label": "Total Users - Study Finder",
+          "value": "62",
+          "sub": " Week 10/11",
+          "icon": "📬",
+          "prevValue": "49"
+        },
+        {
+          "id": "k3",
+          "label": "Valid Studies in DB",
+          "value": "11,218",
+          "sub": "Study DB",
+          "icon": "🤝",
+          "iconKey": "database"
+        },
+        {
+          "id": "k4",
+          "label": "User Requests",
+          "value": "77",
+          "sub": "All Time",
+          "icon": "🗺️",
+          "iconKey": "users"
+        }
+      ],
+      "releases": [
+        {
+          "id": "1706yz1ifvammsj5kq4",
+          "platform": "Web App (Labrador)",
+          "version": "3.9.0",
+          "targetDate": "TBD",
+          "status": "in-progress",
+          "notes": "Beta AI Medical Analyzer"
+        },
+        {
+          "id": "b73dlpx2dnkmmr2ocj7",
+          "platform": "Web App (Labrador)",
+          "version": "3.8.0",
+          "targetDate": "TBD",
+          "status": "in-progress",
+          "notes": "Beta version for WeTrials Chat Assistant",
+          "datePlanned": "23 Mar., 2026"
+        },
+        {
+          "id": "r1",
+          "platform": "Web App (Labrador)",
+          "version": "3.7.0",
+          "targetDate": "-",
+          "status": "done",
+          "notes": "Live",
+          "dateCompleted": "13 Mar., 2026",
+          "datePlanned": "17 Feb., 2026"
+        },
+        {
+          "id": "r2",
+          "platform": "Mobile App (iOS/Android)",
+          "version": "1.2.2",
+          "targetDate": "-",
+          "status": "done",
+          "notes": "Live"
+        }
+      ],
+      "userPlatform": [
+        {
+          "id": "u5",
+          "title": "Beta version for WeTrials Chat Assistant",
+          "status": "in-progress",
+          "priority": "highest",
+          "datePlanned": "23 Mar, 2026",
+          "dateCompleted": "23 Mar, 2026"
+        },
+        {
+          "id": "u6",
+          "title": "AI Medical Analyzer (analysis + standalone)",
+          "status": "in-progress",
+          "priority": "highest"
+        },
+        {
+          "id": "u7",
+          "title": "Sponsored/Featured Studies Rotation",
+          "status": "in-progress",
+          "priority": "medium"
+        },
+        {
+          "id": "lnq84i3bt5rmmtbgm4v",
+          "title": "Update Support Content - No Dev",
+          "status": "in-progress",
+          "priority": "medium"
+        },
+        {
+          "id": "7zv1paxn2hlmms9cvcw",
+          "title": "Study Title Optimization - No Dev",
+          "status": "in-progress",
+          "priority": "medium"
+        }
+      ],
+      "partnerPlatform": [
+        {
+          "id": "p3",
+          "title": "Enrollment Dashboard — integrating more partner study data",
+          "status": "in-progress",
+          "priority": "high"
+        },
+        {
+          "id": "p4",
+          "title": "Aggregated data view — create",
+          "status": "in-progress",
+          "priority": "high"
+        },
+        {
+          "id": "ygokexpqn2lmms9dwk6",
+          "title": "Deploy Current Version to WeTrials Infrastructure",
+          "status": "in-progress",
+          "priority": "high"
+        }
+      ],
+      "analytics": [
+        {
+          "id": "6vicouithz6mmr6o34n",
+          "title": " All Platforms Analytics Dashboard Rev. 02.March.2026",
+          "status": "in-progress",
+          "priority": "high"
+        },
+        {
+          "id": "a5",
+          "title": "Learning Center & Support Card Click events",
+          "status": "done",
+          "priority": "high"
+        }
+      ],
+      "database": {
+        "totalStudies": 11218,
+        "sessions": [
+          {
+            "id": "d1",
+            "name": "Data Simplification Session 009 — Deployment to Production",
+            "status": "done"
+          },
+          {
+            "id": "d2",
+            "name": "Update Study Profiles Across All Platforms",
+            "status": "in-progress"
+          }
+        ]
+      },
+      "partners": [
+        {
+          "id": "pt1",
+          "name": "ABTA x WeTrials",
+          "icon": "🧠",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "2j20rmoevkgmmrxecoc",
+              "title": "Ono Pharmaceutical Co. Ltd - 1 study",
+              "status": "in-progress"
+            },
+            {
+              "id": "hku055fmuhmmrx9h7k",
+              "title": "Northwell - 16 studies",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt1i1",
+              "title": "Black Diamond Therapeutics Inc  - 1 study",
+              "status": "in-progress"
+            }
+          ],
+          "notes": "Received a review for 8 studies from Northwell. Completed the changes in the database. Shared the studies with Caline that require validation and confirmation for review.\n\nhttps://claude.ai/public/artifacts/d1f405eb-b1ac-4c9f-bccf-b9c804967e97\n"
+        },
+        {
+          "id": "pt2",
+          "name": "BCC x WeTrials",
+          "icon": "🔬",
+          "completed": [
+            "Presented Enrollment Dashboard to BCC (Mar 5, 2026)",
+            "WeTrials Presentation for BCC Annual Meeting — DONE"
+          ],
+          "inProgress": [
+            {
+              "id": "j1eeshefp7mmr6t8w8",
+              "title": "Clinical Trial Enrollment Tracking Dashboard",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt2i1",
+              "title": "Study Finder v3.7.0 - Go-Live Plan",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt2i2",
+              "title": "AI Video — BCC020 Scenario (sent, minor feedback received)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i3",
+              "title": "AI Video — Dr. Sholler re-recording (Precision Medicine)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i4",
+              "title": "AI Video — Dr. Kraveka recording",
+              "status": "pending"
+            }
+          ],
+          "notes": "Go-live plan to share with BCC. \nRequirement: video content integrated into study details. Preparing a plan to provide a timeline, starting with going live as-is and moving to video-integrated deployment."
+        },
+        {
+          "id": "pt3",
+          "name": "Duke x WeTrials",
+          "icon": "🏥",
+          "completed": [],
+          "inProgress": [],
+          "notes": "No updates"
+        },
+        {
+          "id": "pt4",
+          "name": "OncoDaily",
+          "icon": "📰",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "pt4i1",
+              "title": "NDA Review",
+              "status": "in-progress"
+            }
+          ],
+          "notes": "Shared updated NDA. Awaiting response. Last Follow up"
+        }
+      ],
+      "roadmap": [
+        {
+          "id": "rm1",
+          "title": "AI-powered related content recommendation system",
+          "status": "planned",
+          "priority": "high",
+          "note": "Evaluating effort"
+        },
+        {
+          "id": "rm4",
+          "title": "Multilingual simplify on fly feature and QR code–based trial referral / workflow",
+          "status": "planned",
+          "priority": "high",
+          "note": "based on NCT input"
+        },
+        {
+          "id": "rm2",
+          "title": "Clinician Profile Generator",
+          "status": "planned",
+          "priority": "high",
+          "note": "Priority building block toward clinician + patient network"
+        },
+        {
+          "id": "rm7",
+          "title": "Video Integration to Study DETAILS PAGE",
+          "status": "planned",
+          "priority": "high",
+          "note": "Request coming from partner, potential revenue generator"
+        },
+        {
+          "id": "rm6",
+          "title": "Second Opinion Tool Integration",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        },
+        {
+          "id": "rm5",
+          "title": "Treatment Category Identification icons/tags on cards (surgery, device, placebo…)",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        },
+        {
+          "id": "rm8",
+          "title": "Biomarker-Based Search",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        }
+      ],
+      "userRequests": [
+        {
+          "id": "82vl8t93wd2mmrbc8da",
+          "period": "Mar 9 - 15 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 1,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 1
+        },
+        {
+          "id": "xt14oii9woemmrb8lxn",
+          "period": "Mar 1 - 8 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 1,
+          "uniqueUsers": 2
+        },
+        {
+          "id": "ur1",
+          "period": "Feb 2026",
+          "webApp": {
+            "wetrials": 2,
+            "abta": 0,
+            "gsn": 5,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 3
+        },
+        {
+          "id": "ur3",
+          "period": "Jan 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 3,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 4
+        },
+        {
+          "id": "ur4",
+          "period": "2025",
+          "webApp": {
+            "wetrials": 10,
+            "abta": 21,
+            "gsn": 1,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 13,
+          "uniqueUsers": 36
+        },
+        {
+          "id": "ur7",
+          "period": "2024",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 17,
+          "uniqueUsers": 3
+        }
+      ],
+      "hubspotUrl": "https://app.hubspot.com/reports-dashboard/43909160/view/15262690",
+      "notes": "Aram is planning a vacation from July 4–15",
+      "customModules": [
+        {
+          "id": "n1p0sftd827mmr6j2ud",
+          "name": "ACL Caregiver AI Prize Challenge",
+          "iconKey": "flask",
+          "column": "left",
+          "items": [
+            {
+              "id": "r5dxzdy1qrmmr6k9y9",
+              "title": "Intent to Apply Submission (optional)",
+              "status": "in-progress",
+              "priority": "low"
+            }
+          ],
+          "notes": "Reviewing the materials in preparation for the Intent Submission."
+        }
+      ],
+      "moduleOverrides": {
+        "userPlatform": {
+          "title": "User Platform",
+          "notes": "Issues Identified in the Beta Version of the WeTrials Chat Assistant\n\nCORS (Cross-Origin Resource Sharing)(High): The backend accepts requests from any website without verifying the source, which could allow a malicious site. This must be fixed on the backend, not in Labrador.\n\nNo authentication (High): Chat sessions and messages can be created without login or API key. Security controls must be implemented on the backend.\n\nExtra API actions (Medium): The API allows more actions than the app needs. These should be restricted by the Platform team.\n\nSuggest deploying on development ASAP and address the issue while reviewing the overall feature for production readiness.\n\nFeatured Studies Rotation Prototype\nhttps://claude.ai/public/artifacts/d1f405eb-b1ac-4c9f-bccf-b9c804967e97"
+        },
+        "partnerPlatform": {
+          "notes": "Product Team needs Platform Team Support to migrate and setup on our infrastructure",
+          "title": "Partner Platform"
+        },
+        "analytics": {
+          "notes": "https://lookerstudio.google.com/reporting/011c2f97-66d8-4164-8a64-b78526b8eabc"
+        }
+      },
+      "mitigationPlan": ""
+    },
+    {
+      "id": "rafu7wpc4fmmtlwocb",
+      "week": "Q1 - Mar 16 - 22 2026 - Week 12",
+      "savedAt": "2026-03-23T16:48:05.605Z",
+      "overallStatus": "off-track",
+      "primaryFocus": "Integration of AI-driven functionalities: Chatbot, AI Medical Analyzer, and enhancements to existing modules.",
+      "primaryRisk": "Delivery delays, Platform–product dependency delays, Additional review cycle iterations",
+      "kpis": [
+        {
+          "id": "k1",
+          "label": "In Development",
+          "value": "v3.8.0",
+          "sub": "Web App [Labrador]",
+          "icon": "🗄️",
+          "iconKey": "activity"
+        },
+        {
+          "id": "k2",
+          "label": "Users - Study Finder",
+          "value": "59",
+          "sub": " Week 12",
+          "icon": "📬",
+          "prevValue": "65"
+        },
+        {
+          "id": "k3",
+          "label": "Valid Studies in DB",
+          "value": "11,218",
+          "sub": "Study DB",
+          "icon": "🤝",
+          "iconKey": "database"
+        },
+        {
+          "id": "k4",
+          "label": "User Requests",
+          "value": "90",
+          "sub": "All Time",
+          "icon": "🗺️",
+          "iconKey": "users",
+          "prevValue": "77"
+        }
+      ],
+      "releases": [
+        {
+          "id": "1706yz1ifvammsj5kq4",
+          "platform": "Web App (Labrador)",
+          "version": "3.9.0",
+          "targetDate": "TBD",
+          "status": "in-progress",
+          "notes": "Beta AI Medical Analyzer",
+          "datePlanned": "31 Mar., 2026"
+        },
+        {
+          "id": "b73dlpx2dnkmmr2ocj7",
+          "platform": "Web App (Labrador)",
+          "version": "3.8.0",
+          "targetDate": "TBD",
+          "status": "in-progress",
+          "notes": "Beta version for WeTrials Chat Assistant",
+          "datePlanned": "23 Mar., 2026"
+        },
+        {
+          "id": "r1",
+          "platform": "Web App (Labrador)",
+          "version": "3.7.0",
+          "targetDate": "-",
+          "status": "done",
+          "notes": "Live",
+          "dateCompleted": "13 Mar., 2026",
+          "datePlanned": "17 Feb., 2026"
+        },
+        {
+          "id": "r2",
+          "platform": "Mobile App (iOS/Android)",
+          "version": "1.2.2",
+          "targetDate": "-",
+          "status": "done",
+          "notes": "Live"
+        }
+      ],
+      "userPlatform": [
+        {
+          "id": "u5",
+          "title": "Beta version for WeTrials Chat Assistant",
+          "status": "in-progress",
+          "priority": "highest",
+          "datePlanned": "23 Mar, 2026"
+        },
+        {
+          "id": "u6",
+          "title": "AI Medical Analyzer (analysis + standalone)",
+          "status": "in-progress",
+          "priority": "highest",
+          "datePlanned": "31 Mar, 2026"
+        },
+        {
+          "id": "u7",
+          "title": "Sponsored/Featured Studies Rotation",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "31 Mar, 2026"
+        },
+        {
+          "id": "0cg4acpadvjmn2cejge",
+          "title": "Create a new alternative AI video example for BCC",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "1 Apr, 2026"
+        },
+        {
+          "id": "lnq84i3bt5rmmtbgm4v",
+          "title": "Update Support Content - No Dev",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "8 Apr, 2026"
+        },
+        {
+          "id": "7zv1paxn2hlmms9cvcw",
+          "title": "Study Title Optimization - No Dev",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "14 Apr, 2026"
+        }
+      ],
+      "partnerPlatform": [
+        {
+          "id": "ygokexpqn2lmms9dwk6",
+          "title": "Deploy Current Version to WeTrials Infrastructure",
+          "status": "in-progress",
+          "priority": "high",
+          "datePlanned": "3 Apr, 2026"
+        },
+        {
+          "id": "p4",
+          "title": "Aggregated data view — create",
+          "status": "in-progress",
+          "priority": "high",
+          "datePlanned": "17 Apr, 2026"
+        },
+        {
+          "id": "p3",
+          "title": "Enrollment Dashboard — integrating more BCC study data",
+          "status": "in-progress",
+          "priority": "high",
+          "datePlanned": "24 Apr, 2026"
+        }
+      ],
+      "analytics": [
+        {
+          "id": "6vicouithz6mmr6o34n",
+          "title": " All Platforms Analytics Dashboard Rev. 02.March.2026",
+          "status": "in-progress",
+          "priority": "high",
+          "datePlanned": "2 Apr, 2026"
+        }
+      ],
+      "database": {
+        "totalStudies": 11218,
+        "sessions": [
+          {
+            "id": "ommh124z6tomn2jsewy",
+            "name": "Update Study Profiles Across All Platforms",
+            "status": "in-progress",
+            "datePlanned": "24 Mar, 2026",
+            "dateCompleted": ""
+          },
+          {
+            "id": "d1",
+            "name": "Data Simplification Session 010",
+            "status": "in-progress",
+            "datePlanned": "10 Apr, 2026"
+          }
+        ]
+      },
+      "partners": [
+        {
+          "id": "pt1",
+          "name": "ABTA x WeTrials",
+          "icon": "🧠",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "2j20rmoevkgmmrxecoc",
+              "title": "Ono Pharmaceutical Co. Ltd - 1 study",
+              "status": "in-progress"
+            },
+            {
+              "id": "hku055fmuhmmrx9h7k",
+              "title": "Northwell - 16 studies",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt1i1",
+              "title": "Black Diamond Therapeutics Inc  - 1 study",
+              "status": "in-progress"
+            },
+            {
+              "id": "d953n7du4lmn2endwo",
+              "title": " Alpheus Medical - 1 Study",
+              "status": "in-progress"
+            }
+          ],
+          "notes": "Received new study from Alpheus Medical\n\nWe need to establish a more efficient study approval process, as the current workflow is time-consuming\n\nhttps://claude.ai/public/artifacts/d1f405eb-b1ac-4c9f-bccf-b9c804967e97"
+        },
+        {
+          "id": "pt2",
+          "name": "BCC x WeTrials",
+          "icon": "🔬",
+          "completed": [
+            "Presented Enrollment Dashboard to BCC (Mar 5, 2026)",
+            "WeTrials Presentation for BCC Annual Meeting — DONE"
+          ],
+          "inProgress": [
+            {
+              "id": "pt2i1",
+              "title": "Study Finder v3.7.0 - Go-Live Plan",
+              "status": "in-progress",
+              "datePlanned": "31 Mar, 2026"
+            },
+            {
+              "id": "kfcg3ld1djbmn2i5pur",
+              "title": "Create a new alternative AI video example for BCC",
+              "status": "in-progress",
+              "datePlanned": "1 Apr, 2026"
+            },
+            {
+              "id": "j1eeshefp7mmr6t8w8",
+              "title": "Clinical Trial Enrollment Tracking Dashboard - Early Preview ",
+              "status": "in-progress",
+              "datePlanned": "25 Apr, 2026"
+            },
+            {
+              "id": "pt2i2",
+              "title": "AI Video — BCC020 Scenario (sent, minor feedback received)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i3",
+              "title": "AI Video — Dr. Sholler re-recording (Precision Medicine)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i4",
+              "title": "AI Video — Dr. Kraveka recording",
+              "status": "pending"
+            }
+          ],
+          "notes": "Go-live plan to share with BCC. \nRequirement: video content integrated into study details. Preparing a plan to provide a timeline, starting with going live as-is and moving to video-integrated deployment."
+        },
+        {
+          "id": "pt3",
+          "name": "Duke x WeTrials",
+          "icon": "🏥",
+          "completed": [],
+          "inProgress": [],
+          "notes": "No updates"
+        },
+        {
+          "id": "pt4",
+          "name": "OncoDaily",
+          "icon": "📰",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "pt4i1",
+              "title": "NDA Review",
+              "status": "pending"
+            }
+          ],
+          "notes": "Shared updated NDA. Awaiting response. Follow up message sent on 16 Mar, 2026"
+        }
+      ],
+      "roadmap": [
+        {
+          "id": "rm1",
+          "title": "AI-powered related content recommendation system",
+          "status": "planned",
+          "priority": "high",
+          "note": "Evaluate effort and request a feature breakdown (architecture, logic, integration) from the Platform Team to support integration."
+        },
+        {
+          "id": "rm4",
+          "title": "Multilingual simplify on fly feature and QR code–based trial referral / workflow",
+          "status": "planned",
+          "priority": "high",
+          "note": "based on NCT input"
+        },
+        {
+          "id": "rm2",
+          "title": "Clinician Profile Generator",
+          "status": "planned",
+          "priority": "high",
+          "note": "Priority building block toward clinician + patient network"
+        },
+        {
+          "id": "rm7",
+          "title": "Video Integration to Study Details Page",
+          "status": "planned",
+          "priority": "high",
+          "note": "Request coming from partner, potential revenue generator"
+        },
+        {
+          "id": "rm5",
+          "title": "Treatment Category Identification icons/tags on cards (surgery, device, placebo…)",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        },
+        {
+          "id": "rm8",
+          "title": "Biomarker-Based Search",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        },
+        {
+          "id": "rm6",
+          "title": "Second Opinion Tool Integration",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        }
+      ],
+      "userRequests": [
+        {
+          "id": "eyr1hp0ehdlmmzbbo04",
+          "period": "Mar 16 - 22 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 10,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 2,
+          "uniqueUsers": 4
+        },
+        {
+          "id": "82vl8t93wd2mmrbc8da",
+          "period": "Mar 9 - 15 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 1,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 1
+        },
+        {
+          "id": "xt14oii9woemmrb8lxn",
+          "period": "Mar 1 - 8 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 1,
+          "uniqueUsers": 2
+        },
+        {
+          "id": "ur1",
+          "period": "Feb 2026",
+          "webApp": {
+            "wetrials": 2,
+            "abta": 0,
+            "gsn": 5,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 3
+        },
+        {
+          "id": "ur3",
+          "period": "Jan 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 3,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 4
+        },
+        {
+          "id": "ur4",
+          "period": "2025",
+          "webApp": {
+            "wetrials": 10,
+            "abta": 21,
+            "gsn": 1,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 13,
+          "uniqueUsers": 36
+        },
+        {
+          "id": "ur7",
+          "period": "2024",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 17,
+          "uniqueUsers": 3
+        }
+      ],
+      "hubspotUrl": "https://app.hubspot.com/reports-dashboard/43909160/view/15262690",
+      "notes": "",
+      "customModules": [
+        {
+          "id": "n1p0sftd827mmr6j2ud",
+          "name": "ACL Caregiver AI Prize Challenge",
+          "iconKey": "target",
+          "column": "left",
+          "items": [
+            {
+              "id": "r5dxzdy1qrmmr6k9y9",
+              "title": "Intent to Apply Submission (optional)",
+              "status": "in-progress",
+              "priority": "high",
+              "datePlanned": "15 Apr, 2026"
+            }
+          ],
+          "notes": "Reviewing the materials in preparation for the Intent Submission."
+        },
+        {
+          "id": "0si9ocnuvuymn2d2yhj",
+          "name": "2026 SR&ED Claim — Preparation Work",
+          "iconKey": "folder",
+          "column": "left",
+          "items": [
+            {
+              "id": "reyvktj3vumn2ejza3",
+              "title": "2026 SR&ED Claim — Draft Preparation",
+              "status": "in-progress",
+              "priority": "high",
+              "datePlanned": "17 Apr, 2026"
+            }
+          ],
+          "notes": "Please report Tempo hours for the period Apr 1, 2025 to Mar 20, 2026 \n\nHoon 1296/2080\nAlex 1732/2080\nRidham 152/2080\nAram 1777/2080\nRomeo 2035/2080\n\nReceived from the Product team: a list of potential project candidates for SR&ED."
+        }
+      ],
+      "moduleOverrides": {
+        "userPlatform": {
+          "title": "User Platform",
+          "notes": "Chat Bot - From discussion Ridham Kathiriya and Hoon Choi the current chatbot beta version will be integrated within the development env., and after finalizing the use cases and requirements, it will be finalized and released to production.\n\nAI Medical Analyzer - The current infrastructure allows us to deliver the Analyzer that generates a summarized report of the user/patient medical record, and simplifies it to allow users to better understand their condition and details, including important elements like biomarkers. This fulfills one of the pillars of WeTrials: Simplify.\n\nSponsored / Featured Studies Rotation - https://aramgyum.github.io/Featured-Study-Rotation/\nUpdates in progress, Show 5 featured studies + “See all”, Add a note that featured studies rotate over time for fair visibility\n\n\n\n",
+          "iconKey": "monitor"
+        },
+        "partnerPlatform": {
+          "notes": "> Started migration of Enrollment Dashboard to internal infrastructure\n> Aligning teams on architecture and requirements\n   > First step: moving codebase to Genesis monorepo for review\n   > Platform team to assess the codebase\n   > Pending: n8n environment confirmation for workflow migration",
+          "title": "Partner Platform",
+          "iconKey": "monitor"
+        },
+        "analytics": {
+          "notes": "We need to consolidate analytics tracking and dashboards for consistent reporting across all platforms and deployments, in collaboration with the marketing team.\n\nhttps://lookerstudio.google.com/reporting/011c2f97-66d8-4164-8a64-b78526b8eabc\n\n🧾 Analytics Update — Switch to Observed Users\nWe are switching our GA4 reporting identity from Blended to Observed to ensure consistency across our dashboards.\n\n🔄 What changed\nBefore (Blended):\n - Combined device data + Google Signals + modeled users\n - Deduplicates users across devices (e.g., phone + laptop = 1 user)\n - Includes estimated / modeled data\nNow (Observed):\n - Uses only actual data (device ID + user ID if available)\n - No modeling or estimation\n - Same user on multiple devices may be counted multiple times",
+          "iconKey": "trending"
+        },
+        "database": {
+          "iconKey": "server"
+        }
+      },
+      "mitigationPlan": ""
+    },
+    {
+      "id": "5mascg1hpdmn7iqtb6",
+      "week": "Q1 - Mar 23 - 29 2026 - Week 13",
+      "savedAt": "2026-03-30T16:58:37.894Z",
+      "overallStatus": "off-track",
+      "primaryFocus": "Implementation and Integration of AI-driven functionalities:\n- Beta WeTrials AI Assistant\n- Beta AI Medical Analyzer\n- Enhancements to existing modules",
+      "primaryRisk": "Delivery Delays\n",
+      "kpis": [
+        {
+          "id": "k1",
+          "label": "In Development",
+          "value": "v3.8.0",
+          "sub": "Web App [Labrador]",
+          "icon": "🗄️",
+          "iconKey": "activity"
+        },
+        {
+          "id": "k2",
+          "label": "Users - Study Finder",
+          "value": "64",
+          "sub": " Week 13",
+          "icon": "📬",
+          "prevValue": "59"
+        },
+        {
+          "id": "k3",
+          "label": "Valid Studies in DB",
+          "value": "11,157",
+          "sub": "Study DB",
+          "icon": "🤝",
+          "iconKey": "database",
+          "prevValue": "11,218"
+        },
+        {
+          "id": "k4",
+          "label": "User Requests",
+          "value": "91",
+          "sub": "All Time",
+          "icon": "🗺️",
+          "iconKey": "users",
+          "prevValue": "90"
+        }
+      ],
+      "releases": [
+        {
+          "id": "1706yz1ifvammsj5kq4",
+          "platform": "Web App (Labrador)",
+          "version": "3.9.0",
+          "targetDate": "TBD",
+          "status": "in-progress",
+          "notes": "Beta AI Medical Analyzer",
+          "datePlanned": "6 Apr., 2026"
+        },
+        {
+          "id": "b73dlpx2dnkmmr2ocj7",
+          "platform": "Web App (Labrador)",
+          "version": "3.8.0",
+          "targetDate": "TBD",
+          "status": "in-progress",
+          "notes": "Beta version for WeTrials AI Assistant (Chatbot) - New delivery date to be determined.",
+          "datePlanned": "23 Mar., 2026"
+        },
+        {
+          "id": "r1",
+          "platform": "Web App (Labrador)",
+          "version": "3.7.0",
+          "targetDate": "-",
+          "status": "done",
+          "notes": "Live",
+          "dateCompleted": "13 Mar., 2026",
+          "datePlanned": "17 Feb., 2026"
+        },
+        {
+          "id": "r2",
+          "platform": "Mobile App (iOS/Android)",
+          "version": "1.2.2",
+          "targetDate": "-",
+          "status": "done",
+          "notes": "Live"
+        }
+      ],
+      "userPlatform": [
+        {
+          "id": "7zv1paxn2hlmms9cvcw",
+          "title": "Study Title Optimization - No Dev",
+          "status": "done",
+          "priority": "medium",
+          "datePlanned": "14 Apr, 2026",
+          "dateCompleted": "25 Mar, 2026"
+        },
+        {
+          "id": "u5",
+          "title": "Beta version for WeTrials AI Assistant",
+          "status": "in-progress",
+          "priority": "highest",
+          "datePlanned": "23 Mar, 2026"
+        },
+        {
+          "id": "u6",
+          "title": "Beta AI Medical Analyzer (analysis + standalone)",
+          "status": "in-progress",
+          "priority": "highest",
+          "datePlanned": "6 Apr, 2026"
+        },
+        {
+          "id": "0cg4acpadvjmn2cejge",
+          "title": "Create a new alternative AI video example for BCC",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "1 Apr, 2026"
+        },
+        {
+          "id": "lnq84i3bt5rmmtbgm4v",
+          "title": "Update Support Content - No Dev",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "8 Apr, 2026"
+        },
+        {
+          "id": "u7",
+          "title": "Sponsored/Featured Studies Rotation",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "10 Apr, 2026"
+        }
+      ],
+      "partnerPlatform": [
+        {
+          "id": "ygokexpqn2lmms9dwk6",
+          "title": "Deploy Current Version to WeTrials Infrastructure",
+          "status": "in-progress",
+          "priority": "high",
+          "datePlanned": "3 Apr, 2026"
+        },
+        {
+          "id": "p3",
+          "title": "Enrollment Dashboard — integrating more BCC study data",
+          "status": "in-progress",
+          "priority": "medium",
+          "datePlanned": "17 Apr, 2026"
+        },
+        {
+          "id": "p4",
+          "title": "Aggregated data view — create",
+          "status": "planned",
+          "priority": "medium",
+          "datePlanned": "24 Apr, 2026"
+        }
+      ],
+      "analytics": [
+        {
+          "id": "6vicouithz6mmr6o34n",
+          "title": " All Platforms Analytics Dashboard Rev. 02.March.2026",
+          "status": "in-progress",
+          "priority": "high",
+          "datePlanned": "2 Apr, 2026"
+        }
+      ],
+      "database": {
+        "totalStudies": 11157,
+        "sessions": [
+          {
+            "id": "ommh124z6tomn2jsewy",
+            "name": "Update Study Profiles Across All Platforms",
+            "status": "done",
+            "datePlanned": "24 Mar, 2026",
+            "dateCompleted": "24 Mar, 2026"
+          },
+          {
+            "id": "d1",
+            "name": "Data Simplification Session 010",
+            "status": "in-progress",
+            "datePlanned": "10 Apr, 2026"
+          }
+        ]
+      },
+      "partners": [
+        {
+          "id": "pt1",
+          "name": "ABTA x WeTrials",
+          "icon": "🧠",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "2j20rmoevkgmmrxecoc",
+              "title": "Ono Pharmaceutical Co. Ltd - 1 study",
+              "status": "in-progress"
+            },
+            {
+              "id": "hku055fmuhmmrx9h7k",
+              "title": "Northwell - 16 studies",
+              "status": "in-progress"
+            },
+            {
+              "id": "pt1i1",
+              "title": "Black Diamond Therapeutics Inc  - 1 study",
+              "status": "in-progress"
+            },
+            {
+              "id": "d953n7du4lmn2endwo",
+              "title": " Alpheus Medical - 1 Study",
+              "status": "in-progress"
+            },
+            {
+              "id": "kpjew2e8imqmncjf8me",
+              "title": "Schedule meeting to introduce Featured Studies and the Simplified Title solution",
+              "status": "open"
+            }
+          ],
+          "notes": "1. Content review is currently in progress. As the number of featured studies continues to grow, the Product team is planning to introduce a sponsor-facing solution for content review, which will help streamline the review and approval process.\n\n2. Created a report on submissions from ABTA, including sponsor names, number of submitted studies, and whether they are featured.\n\nhttps://wetrials.atlassian.net/wiki/x/BoAIV"
+        },
+        {
+          "id": "pt2",
+          "name": "BCC x WeTrials",
+          "icon": "🔬",
+          "completed": [
+            "Presented Enrollment Dashboard to BCC (Mar 5, 2026)",
+            "WeTrials Presentation for BCC Annual Meeting — DONE"
+          ],
+          "inProgress": [
+            {
+              "id": "pt2i1",
+              "title": "Study Finder v3.7.0 - Go-Live Plan",
+              "status": "in-progress",
+              "datePlanned": "31 Mar, 2026"
+            },
+            {
+              "id": "kfcg3ld1djbmn2i5pur",
+              "title": "Create a new alternative AI video example for BCC",
+              "status": "in-progress",
+              "datePlanned": "1 Apr, 2026"
+            },
+            {
+              "id": "j1eeshefp7mmr6t8w8",
+              "title": "Clinical Trial Enrollment Tracking Dashboard ",
+              "status": "in-progress",
+              "datePlanned": "25 Apr, 2026"
+            },
+            {
+              "id": "pt2i2",
+              "title": "AI Video — BCC020 Scenario (sent, minor feedback received)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i3",
+              "title": "AI Video — Dr. Sholler re-recording (Precision Medicine)",
+              "status": "pending"
+            },
+            {
+              "id": "pt2i4",
+              "title": "AI Video — Dr. Kraveka recording",
+              "status": "pending"
+            }
+          ],
+          "notes": "1. Finalizing BCC plan; to be shared with BCC, including update on the upcoming new version of the video\n2. Clinical Trial Enrollment Tracking Dashboard: review sessions to begin post-migration, as agreed with the BCC team\n3. Time logs for the BCC Project (Oct 1, 2025 – Mar 31, 2026).\n    a. Already logged 287 hours: 193 for Study Finder and 94 for the Enrollment Tracking Dashboard."
+        },
+        {
+          "id": "pt3",
+          "name": "Duke x WeTrials",
+          "icon": "🏥",
+          "completed": [],
+          "inProgress": [],
+          "notes": "No updates"
+        },
+        {
+          "id": "pt4",
+          "name": "OncoDaily",
+          "icon": "📰",
+          "completed": [],
+          "inProgress": [
+            {
+              "id": "pt4i1",
+              "title": "NDA Review",
+              "status": "pending"
+            }
+          ],
+          "notes": "Shared updated NDA. Awaiting response. Follow up message sent on 16 Mar, 2026"
+        }
+      ],
+      "roadmap": [
+        {
+          "id": "rm1",
+          "title": "AI-powered related content recommendation system",
+          "status": "planned",
+          "priority": "high",
+          "note": "Platform team please confirm PF-24 completion (GEN-3934) and provide a feature breakdown (architecture, logic, integration)"
+        },
+        {
+          "id": "rm4",
+          "title": "Multilingual simplify on fly feature and QR code–based trial referral / workflow",
+          "status": "planned",
+          "priority": "high",
+          "note": "based on NCT input"
+        },
+        {
+          "id": "rm2",
+          "title": "Clinician Profile Generator",
+          "status": "planned",
+          "priority": "high",
+          "note": "Priority building block toward clinician + patient network"
+        },
+        {
+          "id": "rm7",
+          "title": "Video Integration to Study Details Page",
+          "status": "planned",
+          "priority": "high",
+          "note": "Request coming from partner, potential revenue generator"
+        },
+        {
+          "id": "rm5",
+          "title": "Treatment Category Identification icons/tags on cards (surgery, device, placebo…)",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        },
+        {
+          "id": "rm8",
+          "title": "Biomarker-Based Search",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        },
+        {
+          "id": "rm6",
+          "title": "Second Opinion Tool Integration",
+          "status": "planned",
+          "priority": "low",
+          "note": ""
+        }
+      ],
+      "userRequests": [
+        {
+          "id": "7vy08s0itq4mnbx1zbs",
+          "period": "Mar 23 - 29 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 1,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 1
+        },
+        {
+          "id": "eyr1hp0ehdlmmzbbo04",
+          "period": "Mar 16 - 22 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 10,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 2,
+          "uniqueUsers": 4
+        },
+        {
+          "id": "82vl8t93wd2mmrbc8da",
+          "period": "Mar 9 - 15 2026",
+          "webApp": {
+            "wetrials": 0,
+            "abta": 1,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 1
+        },
+        {
+          "id": "xt14oii9woemmrb8lxn",
+          "period": "Mar 1 - 8 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 1,
+          "uniqueUsers": 2
+        },
+        {
+          "id": "ur1",
+          "period": "Feb 2026",
+          "webApp": {
+            "wetrials": 2,
+            "abta": 0,
+            "gsn": 5,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 3
+        },
+        {
+          "id": "ur3",
+          "period": "Jan 2026",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 3,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 0,
+          "uniqueUsers": 4
+        },
+        {
+          "id": "ur4",
+          "period": "2025",
+          "webApp": {
+            "wetrials": 10,
+            "abta": 21,
+            "gsn": 1,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 13,
+          "uniqueUsers": 36
+        },
+        {
+          "id": "ur7",
+          "period": "2024",
+          "webApp": {
+            "wetrials": 1,
+            "abta": 0,
+            "gsn": 0,
+            "mansouri": 0,
+            "other": 0
+          },
+          "mobileApp": 17,
+          "uniqueUsers": 3
+        }
+      ],
+      "hubspotUrl": "https://app.hubspot.com/reports-dashboard/43909160/view/15262690",
+      "notes": "",
+      "customModules": [
+        {
+          "id": "n1p0sftd827mmr6j2ud",
+          "name": "ACL Caregiver AI Prize Challenge",
+          "iconKey": "target",
+          "column": "left",
+          "items": [
+            {
+              "id": "r5dxzdy1qrmmr6k9y9",
+              "title": "Intent to Apply Submission (optional)",
+              "status": "in-progress",
+              "priority": "medium",
+              "datePlanned": "15 Apr, 2026"
+            }
+          ],
+          "notes": "Required in Email:\n- Team name, members, and primary contact\n- Selected application track\n- Brief description of AI solution + caregiver impact (max 500 words)\n\nKey Requirements:\n- Must designate a primary contact (U.S. citizen or permanent resident, 18+)\n- Primary contact handles all communication\n\nNotes:\n- Submission is draft/tentative and can be updated later\n- Q&A responses will be posted publicly on the challenge page"
+        },
+        {
+          "id": "0si9ocnuvuymn2d2yhj",
+          "name": "2026 SR&ED Claim — Preparation Work",
+          "iconKey": "folder",
+          "column": "left",
+          "items": [
+            {
+              "id": "reyvktj3vumn2ejza3",
+              "title": "2026 SR&ED Claim — Draft Preparation",
+              "status": "in-progress",
+              "priority": "high",
+              "datePlanned": "17 Apr, 2026"
+            }
+          ],
+          "notes": "Please report Tempo hours for the period Apr 1, 2025 to Mar 29, 2026 \n\nHoon 2032/2080\nAlex 1732/2080\nRidham 2041/2080\nAram 2090/2080\nRomeo 2078/2080\n\nSR&ED work organized around four core pillars:\n\n- Simplification\n- Matching\n- Data Normalization\n- AI Explainer Video"
+        }
+      ],
+      "moduleOverrides": {
+        "userPlatform": {
+          "title": "User Platform",
+          "notes": "1. Study Title Optimization - The Study Title Optimization experiment can be considered successful; however, the approach does not guarantee sufficient simplification or searchability.\nAs a result, the Product team is proposing a revised structure for the study card. This includes keeping the original study title (brief title) unchanged, while introducing a short, user-friendly explanation of the study.\nThis approach acknowledges that many study titles are already easy to understand, while for those that include complex terminology (e.g., medication or device names), a concise explanation (up to 20 words or two sentences) will help clarify the study purpose.\n\n2. Beta version for WeTrials AI Assistant - New version https://staging2.wetrials.com/abta-staging/#/study prototype using LangSmith and Claude Haiku  4.5\n\n3. Expected ti have Beta AI Medical Analyzer on development during week March 30 - April 2 \n\n4. Create a new alternative AI video example for BCC -The scenario was updated and shared with Alex Jung\n\n5. Sponsored / Featured Studies Rotation - https://aramgyum.github.io/Featured-Study-Rotation/ Development in progress\n",
+          "iconKey": "monitor"
+        },
+        "partnerPlatform": {
+          "notes": "Aligning teams on architecture and requirements\n    a. Move codebase to Genesis monorepo for review — Ridham Kathiriya\n    b. Platform team to assess the codebase — Hoon Choi\n    c. n8n workflows exported as JSON and uploaded to PR; setup to be handled accordingly (ticket created)\n    d. Database tables exported to structured CSV and shared (ticket created)",
+          "title": "Partner Platform",
+          "iconKey": "monitor"
+        },
+        "analytics": {
+          "notes": "Analytics & Dashboard\n\nInitiated development of a consolidated dashboard (WeTrials.com + Study Finder / WeTrials orgs)\na. Objective: improve visibility into user activity and funnel performance\nb. Goal: enhance user access efficiency and overall experience\nc. Started integration of portal event tracking\nd. Began implementing analytics visualizations for key metrics and user flows\n\nhttps://lookerstudio.google.com/reporting/011c2f97-66d8-4164-8a64-b78526b8eabc",
+          "iconKey": "trending"
+        },
+        "database": {
+          "iconKey": "server"
+        }
+      },
+      "mitigationPlan": "- The Product team initiated development of the  WeTrials AI Assistant (Chatbot), shifting from the previously developed structure.\n- The Chatbot solution is currently in the setup phase, including requirements definition and configuration.\n- In parallel, development of the AI Medical Analyzer continued."
+    }
+  ],
+  "activeIdx": 3
+}
