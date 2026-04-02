@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monthly Executive Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #fcfcfc; color: #1a1a1a; font-family: 'Inter', sans-serif; }
+        .card { border: 1px solid #e5e7eb; background: white; border-radius: 4px; }
+        .status-dot { height: 8px; width: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+        @media print { .no-print { display: none; } }
+        [contenteditable="true"]:hover { background: #f0f9ff; outline: 1px dashed #0ea5e9; }
+    </style>
+</head>
+<body class="p-10">
+    <div class="max-w-4xl mx-auto">
+        <div class="flex justify-between items-end border-b-2 border-black pb-4 mb-8">
+            <div>
+                <h1 class="text-2xl font-bold uppercase tracking-tighter">Monthly Strategic Update</h1>
+                <p class="text-gray-500" contenteditable="true">March 2026 | WeTrials Product Division</p>
+            </div>
+            <button onclick="window.print()" class="no-print bg-black text-white px-4 py-1 text-sm font-bold hover:bg-gray-800">PRINT TO PDF</button>
+        </div>
+
+        <div class="grid grid-cols-4 gap-4 mb-8" id="kpi-container">
+            <div class="card p-4">
+                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Study Finder Users</p>
+                <p class="text-2xl font-light" contenteditable="true">64</p>
+                <p class="text-xs text-green-600 font-medium">↑ 10% vs Feb</p>
+            </div>
+            <div class="card p-4">
+                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">User Requests</p>
+                <p class="text-2xl font-light" contenteditable="true">91</p>
+                <p class="text-xs text-gray-400">Total All-Time</p>
+            </div>
+            <div class="card p-4">
+                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Database Size</p>
+                <p class="text-2xl font-light" contenteditable="true">11,157</p>
+                <p class="text-xs text-gray-400">Valid Studies</p>
+            </div>
+            <div class="card p-4">
+                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Open Roadmap</p>
+                <p class="text-2xl font-light" contenteditable="true">7</p>
+                <p class="text-xs text-blue-600">Active Items</p>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Executive Summary</h2>
+            <div class="bg-gray-50 p-4 border-l-4 border-black" contenteditable="true">
+                March focus was dominated by the architectural pivot of the AI Assistant and the Medical Analyzer. 
+                While technical hurdles (CORS/Auth) caused delays, the pivot to a LangSmith/Claude Haiku 4.5 prototype 
+                provides a more stable foundation for April deployment. ABTA partner volume continues to scale, 
+                necessitating a move toward sponsor-facing automation.
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 mb-8">
+            <div>
+                <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Next Month Priorities</h2>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center justify-between group">
+                        <span contenteditable="true">Deploy AI Medical Analyzer Beta</span>
+                        <span class="text-[10px] bg-gray-100 px-2 py-0.5 font-bold rounded">HIGH</span>
+                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
+                    </li>
+                    <li class="flex items-center justify-between group">
+                        <span contenteditable="true">BCC Go-Live Plan Execution</span>
+                        <span class="text-[10px] bg-gray-100 px-2 py-0.5 font-bold rounded">HIGH</span>
+                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Delivery Tracker</h2>
+                <div class="space-y-2 text-xs">
+                    <div class="flex justify-between items-center group">
+                        <span contenteditable="true">Web App (Labrador) v3.7.0</span>
+                        <span class="text-green-600 font-bold">LIVE</span>
+                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
+                    </div>
+                    <div class="flex justify-between items-center group">
+                        <span contenteditable="true">AI Assistant v3.8.0</span>
+                        <span class="text-amber-600 font-bold">IN-PROGRESS</span>
+                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
