@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Executive Summary</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -9,85 +10,261 @@
         .card { border: 1px solid #e5e7eb; background: white; border-radius: 4px; }
         .status-dot { height: 8px; width: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
         @media print { .no-print { display: none; } }
-        [contenteditable="true"]:hover { background: #f0f9ff; outline: 1px dashed #0ea5e9; }
+        .status-done { color: #16a34a; }
+        .status-in-progress { color: #d97706; }
+        .status-planned, .status-pending, .status-open { color: #6b7280; }
+        .status-off-track { color: #dc2626; }
+        .status-highest, .priority-highest { background: #111827; color: white; }
+        .status-high, .priority-high { background: #e5e7eb; color: #111827; }
+        .status-medium, .priority-medium { background: #f3f4f6; color: #374151; }
+        .status-low, .priority-low { background: #f9fafb; color: #6b7280; }
     </style>
 </head>
-<body class="p-10">
-    <div class="max-w-4xl mx-auto">
+<body class="p-6 md:p-10">
+    <div class="max-w-5xl mx-auto">
         <div class="flex justify-between items-end border-b-2 border-black pb-4 mb-8">
             <div>
                 <h1 class="text-2xl font-bold uppercase tracking-tighter">Monthly Strategic Update</h1>
-                <p class="text-gray-500" contenteditable="true">March 2026 | WeTrials Product Division</p>
+                <p id="subtitle" class="text-gray-500">Loading...</p>
             </div>
-            <button onclick="window.print()" class="no-print bg-black text-white px-4 py-1 text-sm font-bold hover:bg-gray-800">PRINT TO PDF</button>
+            <button onclick="window.print()" class="no-print bg-black text-white px-4 py-1 text-sm font-bold hover:bg-gray-800">
+                PRINT TO PDF
+            </button>
         </div>
 
-        <div class="grid grid-cols-4 gap-4 mb-8" id="kpi-container">
-            <div class="card p-4">
-                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Study Finder Users</p>
-                <p class="text-2xl font-light" contenteditable="true">64</p>
-                <p class="text-xs text-green-600 font-medium">↑ 10% vs Feb</p>
-            </div>
-            <div class="card p-4">
-                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">User Requests</p>
-                <p class="text-2xl font-light" contenteditable="true">91</p>
-                <p class="text-xs text-gray-400">Total All-Time</p>
-            </div>
-            <div class="card p-4">
-                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Database Size</p>
-                <p class="text-2xl font-light" contenteditable="true">11,157</p>
-                <p class="text-xs text-gray-400">Valid Studies</p>
-            </div>
-            <div class="card p-4">
-                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Open Roadmap</p>
-                <p class="text-2xl font-light" contenteditable="true">7</p>
-                <p class="text-xs text-blue-600">Active Items</p>
-            </div>
-        </div>
+        <div id="error-box" class="hidden mb-6 p-4 border border-red-200 bg-red-50 text-red-700 text-sm rounded"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8" id="kpi-container"></div>
 
         <div class="mb-8">
             <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Executive Summary</h2>
-            <div class="bg-gray-50 p-4 border-l-4 border-black" contenteditable="true">
-                March focus was dominated by the architectural pivot of the AI Assistant and the Medical Analyzer. 
-                While technical hurdles (CORS/Auth) caused delays, the pivot to a LangSmith/Claude Haiku 4.5 prototype 
-                provides a more stable foundation for April deployment. ABTA partner volume continues to scale, 
-                necessitating a move toward sponsor-facing automation.
-            </div>
+            <div id="executive-summary" class="bg-gray-50 p-4 border-l-4 border-black text-sm leading-6"></div>
         </div>
 
-        <div class="grid grid-cols-2 gap-8 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             <div>
-                <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Next Month Priorities</h2>
-                <ul class="space-y-2 text-sm">
-                    <li class="flex items-center justify-between group">
-                        <span contenteditable="true">Deploy AI Medical Analyzer Beta</span>
-                        <span class="text-[10px] bg-gray-100 px-2 py-0.5 font-bold rounded">HIGH</span>
-                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
-                    </li>
-                    <li class="flex items-center justify-between group">
-                        <span contenteditable="true">BCC Go-Live Plan Execution</span>
-                        <span class="text-[10px] bg-gray-100 px-2 py-0.5 font-bold rounded">HIGH</span>
-                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
-                    </li>
-                </ul>
+                <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Top Priorities</h2>
+                <ul id="priorities-list" class="space-y-2 text-sm"></ul>
             </div>
 
             <div>
                 <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Delivery Tracker</h2>
-                <div class="space-y-2 text-xs">
-                    <div class="flex justify-between items-center group">
-                        <span contenteditable="true">Web App (Labrador) v3.7.0</span>
-                        <span class="text-green-600 font-bold">LIVE</span>
-                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
-                    </div>
-                    <div class="flex justify-between items-center group">
-                        <span contenteditable="true">AI Assistant v3.8.0</span>
-                        <span class="text-amber-600 font-bold">IN-PROGRESS</span>
-                        <button onclick="this.parentElement.remove()" class="no-print hidden group-hover:inline text-red-500 ml-2">✕</button>
-                    </div>
-                </div>
+                <div id="delivery-list" class="space-y-2 text-xs"></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div>
+                <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Partner Highlights</h2>
+                <div id="partners-list" class="space-y-3 text-sm"></div>
+            </div>
+
+            <div>
+                <h2 class="text-sm font-black uppercase border-b border-gray-200 pb-1 mb-3">Roadmap Snapshot</h2>
+                <div id="roadmap-list" class="space-y-2 text-sm"></div>
             </div>
         </div>
     </div>
+
+    <script>
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function statusClass(status) {
+            const map = {
+                'done': 'status-done',
+                'live': 'status-done',
+                'in-progress': 'status-in-progress',
+                'planned': 'status-planned',
+                'pending': 'status-planned',
+                'open': 'status-planned',
+                'off-track': 'status-off-track'
+            };
+            return map[(status || '').toLowerCase()] || 'text-gray-500';
+        }
+
+        function badgeClass(priority) {
+            const value = (priority || '').toLowerCase();
+            if (value === 'highest') return 'priority-highest';
+            if (value === 'high') return 'priority-high';
+            if (value === 'medium') return 'priority-medium';
+            return 'priority-low';
+        }
+
+        function prettifyStatus(status) {
+            return String(status || '—').replace(/-/g, ' ').toUpperCase();
+        }
+
+        function buildExecutiveSummary(week) {
+            const parts = [];
+
+            if (week.primaryFocus) {
+                parts.push(`<strong>Primary Focus:</strong> ${escapeHtml(week.primaryFocus)}`);
+            }
+
+            if (week.primaryRisk) {
+                parts.push(`<strong>Primary Risk:</strong> ${escapeHtml(week.primaryRisk)}`);
+            }
+
+            if (week.mitigationPlan) {
+                parts.push(`<strong>Mitigation Plan:</strong> ${escapeHtml(week.mitigationPlan)}`);
+            }
+
+            if (week.notes) {
+                parts.push(`<strong>Notes:</strong> ${escapeHtml(week.notes)}`);
+            }
+
+            return parts.length ? parts.join('<br><br>') : 'No executive summary available.';
+        }
+
+        function renderKPIs(kpis) {
+            const container = document.getElementById('kpi-container');
+            if (!Array.isArray(kpis) || !kpis.length) {
+                container.innerHTML = `
+                    <div class="card p-4 col-span-full">
+                        <p class="text-sm text-gray-500">No KPI data available.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = kpis.slice(0, 4).map(kpi => `
+                <div class="card p-4">
+                    <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">${escapeHtml(kpi.label)}</p>
+                    <p class="text-2xl font-light">${escapeHtml(kpi.value)}</p>
+                    <p class="text-xs ${kpi.prevValue ? 'text-green-600 font-medium' : 'text-gray-400'}">
+                        ${escapeHtml(kpi.sub || (kpi.prevValue ? `Prev: ${kpi.prevValue}` : ''))}
+                    </p>
+                </div>
+            `).join('');
+        }
+
+        function renderPriorities(userPlatform = [], partnerPlatform = [], analytics = []) {
+            const priorities = [...userPlatform, ...partnerPlatform, ...analytics]
+                .filter(item => item && item.title)
+                .sort((a, b) => {
+                    const rank = { highest: 4, high: 3, medium: 2, low: 1 };
+                    return (rank[b.priority] || 0) - (rank[a.priority] || 0);
+                })
+                .slice(0, 6);
+
+            const list = document.getElementById('priorities-list');
+
+            if (!priorities.length) {
+                list.innerHTML = `<li class="text-gray-500">No priority items available.</li>`;
+                return;
+            }
+
+            list.innerHTML = priorities.map(item => `
+                <li class="flex items-center justify-between gap-3">
+                    <span>${escapeHtml(item.title)}</span>
+                    <span class="text-[10px] px-2 py-0.5 font-bold rounded ${badgeClass(item.priority)}">
+                        ${escapeHtml((item.priority || 'low').toUpperCase())}
+                    </span>
+                </li>
+            `).join('');
+        }
+
+        function renderDelivery(releases = []) {
+            const list = document.getElementById('delivery-list');
+
+            if (!Array.isArray(releases) || !releases.length) {
+                list.innerHTML = `<div class="text-gray-500">No release data available.</div>`;
+                return;
+            }
+
+            list.innerHTML = releases.map(release => `
+                <div class="flex justify-between items-center gap-3 border-b pb-2">
+                    <div>
+                        <div>${escapeHtml(release.platform)} ${escapeHtml(release.version || '')}</div>
+                        <div class="text-gray-400">${escapeHtml(release.notes || '')}</div>
+                    </div>
+                    <span class="font-bold ${statusClass(release.status)}">
+                        ${prettifyStatus(release.status)}
+                    </span>
+                </div>
+            `).join('');
+        }
+
+        function renderPartners(partners = []) {
+            const container = document.getElementById('partners-list');
+
+            if (!Array.isArray(partners) || !partners.length) {
+                container.innerHTML = `<div class="text-gray-500">No partner updates available.</div>`;
+                return;
+            }
+
+            container.innerHTML = partners.slice(0, 4).map(partner => `
+                <div class="card p-4">
+                    <div class="font-semibold mb-1">${escapeHtml(partner.icon || '')} ${escapeHtml(partner.name)}</div>
+                    <div class="text-gray-600 text-xs mb-2">${escapeHtml(partner.notes || 'No notes')}</div>
+                    <div class="text-xs">
+                        In Progress: ${Array.isArray(partner.inProgress) ? partner.inProgress.length : 0}
+                        ${Array.isArray(partner.completed) ? ` | Completed: ${partner.completed.length}` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderRoadmap(roadmap = []) {
+            const container = document.getElementById('roadmap-list');
+
+            if (!Array.isArray(roadmap) || !roadmap.length) {
+                container.innerHTML = `<div class="text-gray-500">No roadmap items available.</div>`;
+                return;
+            }
+
+            container.innerHTML = roadmap.slice(0, 6).map(item => `
+                <div class="flex justify-between items-center gap-3 border-b pb-2">
+                    <span>${escapeHtml(item.title)}</span>
+                    <span class="text-[10px] px-2 py-0.5 rounded ${badgeClass(item.priority)}">
+                        ${escapeHtml(item.priority || 'low')}
+                    </span>
+                </div>
+            `).join('');
+        }
+
+        async function loadDashboard() {
+            try {
+                const response = await fetch('./report.json', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Could not load report.json (${response.status})`);
+                }
+
+                const data = await response.json();
+                const week = Array.isArray(data.weeks) ? data.weeks[data.activeIdx] || data.weeks[data.weeks.length - 1] : null;
+
+                if (!week) {
+                    throw new Error('No valid week data found in report.json');
+                }
+
+                document.getElementById('subtitle').textContent =
+                    `${week.week || 'Reporting Period'} | WeTrials Product Division`;
+
+                document.getElementById('executive-summary').innerHTML = buildExecutiveSummary(week);
+
+                renderKPIs(week.kpis);
+                renderPriorities(week.userPlatform, week.partnerPlatform, week.analytics);
+                renderDelivery(week.releases);
+                renderPartners(week.partners);
+                renderRoadmap(week.roadmap);
+            } catch (error) {
+                console.error(error);
+                const box = document.getElementById('error-box');
+                box.classList.remove('hidden');
+                box.textContent = `Failed to load dashboard data: ${error.message}`;
+                document.getElementById('subtitle').textContent = 'Unable to load report data';
+                document.getElementById('executive-summary').textContent = 'Please confirm that report.json is in the same folder as index.html.';
+            }
+        }
+
+        loadDashboard();
+    </script>
 </body>
 </html>
